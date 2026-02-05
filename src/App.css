@@ -24,3 +24,42 @@ z-index: 1;
 animation: float 20s ease-in-out infinite;
 
 }
+.orb-1{
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle,#ff6b9d 0%,transparent 70%);
+  top: -10%;
+  left: -10%;
+  animation-delay:0s;
+}
+
+.orb-2{
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle,#104ab4 0%,transparent 70%);
+  bottom:-5%;
+  right: -5%;
+  animation-delay:5s;
+}
+
+
+.orb-3{
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle,#c75e81 0%,transparent 70%);
+  top: 50%;
+  left: 50%;
+  animation-delay:10s;
+}
+@keyframes float{
+  0%, 100%{
+    transform: translate(0,0 scale(1));
+  }
+  33%{
+    transform: translate(50px,-50px) scale(1.2);
+    
+  }
+  66%{
+    transform: translate(-30px,30px) scale(0.7);
+  }
+}
