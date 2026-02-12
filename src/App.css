@@ -126,3 +126,50 @@
     transform: translateY(0);
   }
 }
+input{
+  padding: 0.8rem 1.2rem;
+  background: rgb(255, 255, 255,0.08);
+  border:1px sloid rgb(255, 255, 255,0.12);
+  border-radius: 12px;
+  font-size: 1rem;
+  color: #fff;
+  font-family: 'Outfit',sans-serif;
+  transition: all 0.3s ease;
+  outline: none;
+}
+input::placeholder{
+  color: rgba(255, 255, 255,0.3);
+}
+input::focus{
+  background: rgba(189, 6, 6, 0.473);
+  border-color: rgba(82, 3, 128, 0.08);
+  box-shadow: 0 0 0 3px rgba(255, 107, 157, 0.1);
+  transform: translateY(-2px);
+}
+input:hover{
+  border-color:rgba(228, 221, 221, 0.767);
+}
+.forgot-password a{
+  font-size:0.9rem;
+  color: rgba(250, 15, 15, 0.6);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.forgot-password{
+  text-align: right;
+  margin-top: 0.5rem;
+}
+.forgot-password a:hover{
+  color:#078647;
+}
+.submit-btn{
+  margin-top: 1rem;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #cf1d1d;
+  background: linear-gradient(135deg, #0066ff 0%, #033372 50%, #4c00ff 100%);
+    font-family: "Outfit", sans-serif;
+}
