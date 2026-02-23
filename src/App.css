@@ -141,7 +141,7 @@ input::placeholder{
   color: rgba(255, 255, 255,0.3);
 }
 input::focus{
-  background: rgba(189, 6, 6, 0.473);
+  background: rgba(6, 186, 189, 0.473);
   border-color: rgba(82, 3, 128, 0.08);
   box-shadow: 0 0 0 3px rgba(255, 107, 157, 0.1);
   transform: translateY(-2px);
@@ -151,7 +151,7 @@ input:hover{
 }
 .forgot-password a{
   font-size:0.9rem;
-  color: rgba(250, 15, 15, 0.6);
+  color: rgba(15, 179, 250, 0.6);
   text-decoration: none;
   transition: color 0.3s ease;
 }
@@ -169,7 +169,92 @@ input:hover{
   border-radius: 12px;
   font-size: 1rem;
   font-weight: 600;
-  color: #cf1d1d;
-  background: linear-gradient(135deg, #0066ff 0%, #033372 50%, #4c00ff 100%);
-    font-family: "Outfit", sans-serif;
+  color: #fff;
+  background: linear-gradient(135deg, #0a0e27 0%, #1a1f3a 50%, #2a1f3a 100%);
+  font-family: 'Outfit', sans-serif;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  letter-spacing: 0.05rem;
+  box-shadow: 0 10px 30px rgba(116, 33, 241, 0.3);
+  text-transform: uppercase;
+  width: 100%;
+}
+.submit-btn:hover{
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(255, 255, 255,0.3);
+}
+.submit-btn:active{
+  transform: translateY(0);
+}
+.auth-footer{
+  margin-top: 2rem;
+  text-align: center;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(6, 186, 189, 0.473);
+}
+.auth-footer p{
+  font-size: 0.9rem;
+  color: rgba(82, 3, 128, 0.08);
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.toggle-btn{
+  background: none;
+  border: none;
+  color: #ff6b9d;
+  font-weight: 600;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  font-family: "Outfitt",sans-serif;
+}
+.toggle-btn:hover{
+  color: #ff6b9d,;
+  
+}
+
+@media(max-width: 640px){
+  
+}
+  .auth-container{
+    padding: 1rem;
+  }
+ 
+.auth-card{
+  padding: 2rem 1.5rem;
+  border-radius: 20px;
+}
+.auth-title{
+  font-size: 2rem;
+}
+.gradient-orb{
+  filter:blur(60px)
+}
+.orb-1{
+  width: 300px;
+  height: 300px;
+}
+.orb-2{
+  width: 300px;
+  height: 300px;
+}
+.orb-3{
+  width: 200px;
+  height: 200px;
+}
+@media (max-width:400px){
+  .auth-card{
+    padding: 1.5rem 1.25rem;
+  }
+  .auth-header h1{
+    font-size: 1.75rem;
+  }
+  input{
+    padding: 0.75rem 1rem;
+  }
+  .submit-btn{
+    padding: 0.75rem 1.5rem;
+  }
 }
