@@ -137,6 +137,14 @@ input{
   transition: all 0.3s ease;
   outline: none;
 }
+label{
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: rgba(255,255,255,0.9);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-top: 1vh;
+}
 input::placeholder{
   color: rgba(255, 255, 255,0.3);
 }
